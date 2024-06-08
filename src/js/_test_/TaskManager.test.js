@@ -30,7 +30,7 @@ describe("TaskManager", () => {
 
     expect(taskManager.tasks.length).toBe(0);
     expect(document.getElementById("error-message").textContent).toBe(
-      "Task cannot be empty",
+      "Поле не может быть пустым",
     );
   });
 
@@ -120,7 +120,7 @@ describe("TaskManager", () => {
   });
 
   it("should not add an empty task via addTask method", () => {
-    expect(() => taskManager.addTask("")).toThrow("Task name cannot be empty");
+    expect(() => taskManager.addTask("")).toThrow("Название задачи не может быть пустым");
   });
 
   it("should update pinned list", () => {
@@ -141,14 +141,14 @@ describe("TaskManager", () => {
   it("should display 'No tasks found' if there are no tasks", () => {
     taskManager.updateTaskList();
     expect(document.getElementById("task-list").textContent).toBe(
-      "No tasks found",
+      "Нет задач",
     );
   });
 
   it("should display 'No pinned tasks' if there are no pinned tasks", () => {
     taskManager.updatePinnedList();
     expect(document.getElementById("pinned-list").textContent).toBe(
-      "No pinned tasks",
+      "Нет закрепленных задач",
     );
   });
 });
