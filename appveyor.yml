@@ -1,20 +1,3 @@
-# version: 1.0.{build}
-# image: Visual Studio 2019
-# environment:
-#   nodejs_version: "22"
-# install:
-#   - ps: Install-Product node $env:nodejs_version
-#   - npm install -g yarn
-#   - yarn
-# build_script:
-#   - yarn build
-# artifacts:
-#   - path: dist
-# deploy:
-#   provider: GitHubPages
-#   artifact: dist
-#   commit_message: "Deploying to GitHub Pages"
-#   github_token: secure: <YOUR_GITHUB_TOKEN>
 image: Ubuntu2204  # образ для сборки
 
 stack: node 20 # окружение

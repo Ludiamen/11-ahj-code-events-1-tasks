@@ -20,7 +20,7 @@ class TaskManager {
     if (event.key === "Enter") {
       const taskName = this.taskInputElement.value.trim();
       if (!taskName) {
-        this.displayError("Task cannot be empty");
+        this.displayError("Поле не может быть пустым");
         return;
       }
 
@@ -45,7 +45,7 @@ class TaskManager {
     );
     this.allTasksElement.innerHTML = "";
     if (filteredTasks.length === 0) {
-      this.allTasksElement.innerHTML = "<p>No tasks found</p>";
+      this.allTasksElement.innerHTML = "<p>Нет задач</p>";
     } else {
       filteredTasks.forEach((task) => this.renderTask(task));
     }
@@ -116,7 +116,7 @@ class TaskManager {
     const pinnedTasks = this.tasks.filter((task) => task.isPinned);
     this.pinnedTasksElement.innerHTML = pinnedTasks.length
       ? ""
-      : "<p>No pinned tasks</p>";
+      : "<p>Нет закрепленных задач</p>";
     pinnedTasks.forEach((task) => this.renderTask(task));
   }
 
@@ -132,7 +132,7 @@ class TaskManager {
 
   addTask(taskName) {
     if (!taskName) {
-      throw new Error("Task name cannot be empty");
+      throw new Error("Название задачи не может быть пустым");
     }
     const newTask = new Task(taskName);
     this.tasks.push(newTask);
