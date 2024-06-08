@@ -1,6 +1,6 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/72uxrosjq55gsdxr?svg=true)](https://ci.appveyor.com/project/Ludiamen/11-ahj-code-dom)
+[![Build status](https://ci.appveyor.com/api/projects/status/wj426ho2x6the282?svg=true)](https://ci.appveyor.com/project/Ludiamen/11-ahj-code-events-1-tasks)
 
-[Сcылка на GitHub Pages](https://ludiamen.github.io/11-ahj-code-dom/)
+[Сcылка на GitHub Pages](https://ludiamen.github.io/11-ahj-code-events-1-tasks/)
 
 Правила сдачи задания:
 
